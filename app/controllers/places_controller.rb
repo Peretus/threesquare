@@ -8,7 +8,7 @@ class PlacesController < ApplicationController
   end
 
   def create
-    @place = Place.new(place_params)
+    @place = Place.new(places_params)
     @place.save
     redirect_to root_path
   end
@@ -23,8 +23,8 @@ class PlacesController < ApplicationController
   end
 
   def update
-    @place = PLace.find(params[:id])
-    @place.update(place_params)
+    @place = Place.find(params[:id])
+    @place.update(places_params)
     redirect_to root_path
   end
 

@@ -6,6 +6,8 @@
 	<%=   f.text_field :url, :placeholder => "http://img_url.com/" %>
 
 	<%=  f.label :description %>
-	<%=   f.text_field :url, :placeholder => "This place is amazing!" %>
+	<%=   f.text_field :description, :placeholder => "This place is amazing!" %>
+
+	<%= f.submit "Go!" %>
 	
 <% end %>

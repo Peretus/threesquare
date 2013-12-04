@@ -1,3 +1,7 @@
 <% @places.each do |place|%>
-<%= place.location %><br />
+<div class="listing">
+	<img class="avatar" src="<%= place.url %>" />
+	<h1 class="image_location"><%= place.location %></h1>
+	<hr />
+</div>
 <% end %>
